@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/person" />
+        app:srcCompat="@drawable/profile" />
 
     <View
         android:id="@+id/view3"
@@ -261,8 +261,8 @@
         android:layout_width="76dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_eiu" />
 

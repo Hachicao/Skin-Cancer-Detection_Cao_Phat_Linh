@@ -36,7 +36,8 @@
             android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <category android:name="android.intent.category.MainActivity" />
             </intent-filter>

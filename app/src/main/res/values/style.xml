@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowContentTransitions">true</item>
     </style>
+
     <style name="Divider">
         <item name="android:background">?android:attr/listDivider</item>
         <item name="android:textColor">#040404</item>
@@ -12,12 +14,20 @@
     <style name="Divider.Horizontal" parent="Divider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:textColor">#040404</item>
-        <item name="android:layout_height">5dp</item> // You can change thickness here.
+        <item name="android:layout_height">5dp</item>
+        // You can change thickness here.
 
     </style>
 
     <style name="Divider.Vertical" parent="Divider">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>

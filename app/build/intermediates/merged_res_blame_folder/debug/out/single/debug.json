@@ -1,0 +1,526 @@
+[
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_4.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_4.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_bottom_animation.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\bottom_animation.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img26.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img26.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_popup_spinner.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_popup_spinner.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_google_ic.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\google_ic.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_out_right.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo_group.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\logo_group.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_14.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_14.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img49.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img49.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img50.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img50.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img42.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img42.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_backup.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_backup.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img12.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img12.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img25.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img25.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_rectangle_nav.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\rectangle_nav.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_doctor_img_regis.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\doctor_img_regis.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img19.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img19.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_in_left.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_btn.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\rounded_btn.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_smartphone.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\smartphone.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_account.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\activity_account.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img41.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img41.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_in_right.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img48.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img48.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_docr_icon.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\docr_icon.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img47.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img47.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_doctor_img.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\doctor_img.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo_eiu.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\logo_eiu.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img21.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img21.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img17.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img17.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_person.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\person.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img32.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img32.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_bungee.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\bungee.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_spinner.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_spinner.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_rectangle_login.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\rectangle_login.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_item_threshold.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\spinner_item_threshold.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_roboto_thin.ttf.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\roboto_thin.ttf"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_setting.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\setting.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\raw_health.json.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\raw\\health.json"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_login.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_profile.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\profile.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img27.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img27.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_be_vietnam_extrabold_italic.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\be_vietnam_extrabold_italic.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_mobile.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_mobile.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_photo_camera.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\photo_camera.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img24.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img24.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_out_left.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_12.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_12.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_15.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_15.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\raw_next.json.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\raw\\next.json"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_frame_20.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable-v24\\frame_20.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_3.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_3.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_fram_4.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\fram_4.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_with.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\login_with.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_18.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_18.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_facebook_ic.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\facebook_ic.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\xml_file_paths.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_cib_apple.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\cib_apple.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_welcome_page.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\activity_welcome_page.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img45.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img45.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_alegreya_sc_black_italic.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\alegreya_sc_black_italic.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img23.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img23.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_image_8.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\image_8.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_roboto_regular.ttf.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\roboto_regular.ttf"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_custome.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\spinner_custome.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_progress_back.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\progress_back.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_camera.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\camera.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_11.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_11.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_white.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\white.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_item.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_spinner_img.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_spinner_img.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_10.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_10.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_doctor_img_women.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\doctor_img_women.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img29.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img29.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img31.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img31.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img44.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img44.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_next.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\next.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_back.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\font_bangers.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\font\\bangers.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img22.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img22.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_2_mobile.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\bg_2_mobile.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img16.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img16.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_17.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_17.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_background.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable-v24\\background.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img13.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img13.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img40.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img40.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_imgbackground.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable-v24\\imgbackground.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_rectangle.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\rectangle.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_16.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_16.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\raw_detection.json.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\raw\\detection.json"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_circle.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\circle.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img15akiec.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img15akiec.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_background2.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\background2.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img28.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img28.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_borderimg.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\borderimg.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img20.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img20.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img33.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img33.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img46.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img46.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\anim_top_animation.xml.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\anim\\top_animation.xml"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img18.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img18.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\raw_good_health.json.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\raw\\good_health.json"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_frame_19.png.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\frame_19.png"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img43.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img43.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\drawable_img30.jpg.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\drawable\\img30.jpg"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "H:\\ProjectAIRetrofit\\app\\build\\intermediates\\merged_res\\debug\\raw_right_arrow.json.flat",
+        "source": "H:\\ProjectAIRetrofit\\app\\src\\main\\res\\raw\\right_arrow.json"
+    }
+]

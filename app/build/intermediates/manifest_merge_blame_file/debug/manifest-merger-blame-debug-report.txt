@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.projectairetrofit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:5:5-67
+11-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:6:5-80
+12-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15
+16    <application
+16-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:8:5-58:19
+17        android:allowBackup="true"
+17-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:9:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] C:\Users\HP\.gradle\caches\transforms-3\b9e4376e452ce4f1a2bbb1fc4b534124\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:10:9-43
+21        android:label="EIU Cancer Detection"
+21-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:11:9-45
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:12:9-54
+23        android:supportsRtl="true"
+23-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:13:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.ProjectAIRetrofit"
+25-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:14:9-55
+26        android:usesCleartextTraffic="true" >
+26-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:15:9-44
+27        <activity
+27-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:16:9-18:40
+28            android:name="com.example.projectairetrofit.ProfileActivity"
+28-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:17:13-44
+29            android:exported="false" />
+29-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:18:13-37
+30        <activity
+30-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:19:9-27:20
+31            android:name="com.example.projectairetrofit.WelcomePage"
+31-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:20:13-40
+32            android:exported="true" >
+32-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:21:13-36
+33            <intent-filter>
+33-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:22:13-26:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:23:17-69
+34-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:23:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:25:17-77
+36-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:25:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:28:9-30:48
+40            android:name="com.example.projectairetrofit.AccountActivity"
+40-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:29:13-44
+41            android:exported="true" />
+41-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:30:13-36
+42        <activity
+42-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:31:9-33:48
+43            android:name="com.example.projectairetrofit.LoginActivity"
+43-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:32:13-42
+44            android:exported="true" />
+44-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:33:13-36
+45        <activity
+45-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:34:9-36:48
+46            android:name="com.example.projectairetrofit.RegisterActivity"
+46-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:35:13-45
+47            android:exported="true" />
+47-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:36:13-36
+48        <activity
+48-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:37:9-43:20
+49            android:name="com.example.projectairetrofit.MainActivity"
+49-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:38:13-41
+50            android:exported="true" >
+50-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:39:13-36
+51            <intent-filter>
+51-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:40:13-42:29
+52                <category android:name="android.intent.category.MainActivity" />
+52-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:41:17-81
+52-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:41:27-78
+53            </intent-filter>
+54        </activity>
+55
+56        <provider
+56-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:45:9-53:20
+57            android:name="androidx.core.content.FileProvider"
+57-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:46:13-62
+58            android:authorities="com.example.projectairetrofit.fileprovider"
+58-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:47:13-77
+59            android:exported="false"
+59-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:48:13-37
+60            android:grantUriPermissions="true" >
+60-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:49:13-47
+61            <meta-data
+61-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:50:13-52:54
+62                android:name="android.support.FILE_PROVIDER_PATHS"
+62-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:51:17-67
+63                android:resource="@xml/file_paths" />
+63-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:52:17-51
+64        </provider>
+65
+66        <meta-data
+66-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:55:9-57:57
+67            android:name="preloaded_fonts"
+67-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:56:13-43
+68            android:resource="@array/preloaded_fonts" />
+68-->H:\ProjectAIRetrofit\app\src\main\AndroidManifest.xml:57:13-54
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+72            android:authorities="com.example.projectairetrofit.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\HP\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\HP\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\HP\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+80            <meta-data
+80-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:31:13-33:52
+81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+81-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:32:17-85
+82                android:value="androidx.startup" />
+82-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:33:17-49
+83        </provider>
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:36:9-45:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:37:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:38:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:39:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:40:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:41:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:42:13-44:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:43:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.1.0-beta02] C:\Users\HP\.gradle\caches\transforms-3\c73e53263af114f4ddc0010ec7f25ba7\transformed\profileinstaller-1.1.0-beta02\AndroidManifest.xml:43:25-88
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>

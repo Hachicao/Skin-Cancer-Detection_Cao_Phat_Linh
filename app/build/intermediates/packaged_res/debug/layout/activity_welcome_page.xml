@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_11"
+    android:orientation="vertical"
+    tools:context=".WelcomePage">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="238dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_group" />
+
+    <TextView
+
+
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="288dp"
+        android:fontFamily="@font/be_vietnam_extrabold_italic"
+        android:gravity="center"
+        android:text="Welcome to"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/be_vietnam_extrabold_italic"
+        android:gravity="center"
+        android:text="Skin Cancer Detection"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_getstarted"
+        android:layout_width="194dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="140dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#090909"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F6F6"
+
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="#1976D2"
+        app:strokeWidth="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

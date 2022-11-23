@@ -7,6 +7,24 @@
     tools:context=".ProfileActivity">
 
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_reg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#E80E0E"
+        android:textSize="20dp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="#1976D2"
+        app:strokeWidth="2dp" />
+
     <View
         android:id="@+id/view_nav"
         android:layout_width="match_parent"
@@ -22,9 +40,9 @@
     <ImageButton
         android:id="@+id/btn_home"
         android:layout_width="48dp"
-        android:layout_height="41dp"
+        android:layout_height="38dp"
         android:layout_marginStart="64dp"
-        android:background="#FFFFFF"
+        android:background="#0D5EE4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home" />
@@ -32,21 +50,92 @@
     <ImageButton
         android:id="@+id/btn_profile"
         android:layout_width="48dp"
-        android:layout_height="41dp"
+        android:layout_height="38dp"
         android:layout_marginEnd="64dp"
-        android:background="#FFFFFF"
+        android:background="#0D5EE4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/person" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="410dp"
-        android:layout_height="178dp"
-        android:layout_marginBottom="348dp"
-        app:layout_constraintBottom_toTopOf="@+id/view_nav"
+    <View
+
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="#0D5EE4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+
+    </View>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="195dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="80dp"
+        android:text="Name"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:srcCompat="@drawable/person2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Type"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Change Information"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="#1976D2"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

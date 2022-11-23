@@ -73,8 +73,8 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="195dp"
-        android:layout_height="182dp"
+        android:layout_width="193dp"
+        android:layout_height="188dp"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.078"
@@ -83,7 +83,7 @@
         app:srcCompat="@drawable/circle2" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_name1"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginTop="92dp"
@@ -108,7 +108,7 @@
         app:srcCompat="@drawable/person2" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -118,7 +118,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_name1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_reg"

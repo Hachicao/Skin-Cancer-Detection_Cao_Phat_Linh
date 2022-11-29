@@ -4,21 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    android:background="@color/white"
+    tools:context=".activities.ProfileActivity">
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_reg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Logout"
         android:textAllCaps="false"
         android:textColor="#E80E0E"
         android:textSize="20dp"
         app:backgroundTint="#FFFFFF"
         app:cornerRadius="10dp"
+        android:drawableRight="@drawable/ic_baseline_logout_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reg"
         app:rippleColor="#33AAAAAA"
@@ -73,8 +77,8 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="193dp"
-        android:layout_height="188dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.078"
@@ -86,14 +90,14 @@
         android:id="@+id/tv_name1"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="80dp"
         android:text="Name"
 
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -105,7 +109,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:srcCompat="@drawable/person2" />
+        app:srcCompat="@drawable/ic_baseline_person_25" />
 
     <TextView
         android:id="@+id/tv_type"
@@ -113,10 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Type"
-        android:textStyle="italic"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/tv_name1" />
 
@@ -124,7 +128,7 @@
         android:id="@+id/btn_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="60dp"
         android:text="Change Information"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -132,6 +136,7 @@
         app:backgroundTint="#FFFFFF"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:rippleColor="#33AAAAAA"

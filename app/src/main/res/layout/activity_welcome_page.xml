@@ -4,54 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/frame_11"
+    android:background="@drawable/white"
     android:orientation="vertical"
-    tools:context=".WelcomePage">
+    tools:context=".activities.WelcomePage">
 
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="238dp"
-        android:layout_height="162dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_eiu" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_getstarted"
         android:layout_width="194dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="152dp"
         android:text="Get Started"
         android:textAllCaps="false"
-        android:textColor="#090909"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:backgroundTint="#F6F6F6"
-
+        app:backgroundTint="#0D5EE4"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#33AAAAAA"
         app:strokeColor="#1976D2"
         app:strokeWidth="2dp" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="312dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="196dp"
+
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_new" />
+        app:srcCompat="@drawable/logo_4" />
+
+    <TextView
+        android:id="@+id/tv_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bungee"
+        android:text="SKIN DETECT.AI"
+        android:textColor="#0D5EE4"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <TextView
+        android:id="@+id/tv_sologan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Your Health Our Concern"
+        android:textColor="#0D5EE4"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_slogan" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

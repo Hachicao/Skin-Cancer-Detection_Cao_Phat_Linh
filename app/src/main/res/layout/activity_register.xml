@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ct_reg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/frame_17"
-    tools:context=".RegisterActivity">
+    android:background="@drawable/frame_14"
+    tools:context=".activities.RegisterActivity">
 
 
     <ImageView
@@ -80,53 +81,59 @@
             android:layout_height="wrap_content"
             android:hint="User Name"
 
-            android:textDirection="firstStrong"
             android:textColorHint="@color/black"
-            app:boxBackgroundColor="#E8ECF4"
+            android:textDirection="firstStrong"
+            app:boxBackgroundColor="@color/white"
             app:boxBackgroundMode="outline"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#1394DA"
+            app:boxStrokeColor="#0D5EE4"
             app:boxStrokeErrorColor="#E40808"
             app:errorTextColor="#ED0A0A">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
                 android:inputType="text"
-                android:textColorLink="#FFA000"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black" />
+                android:textColorHint="@color/black"
+                android:textColorLink="#FFA000" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edt_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:layout_marginTop="10dp"
 
-            android:textDirection="firstStrong"
+            android:hint="Email"
             android:textColorHint="@color/black"
-            app:boxBackgroundColor="#E8ECF4"
+            android:textDirection="firstStrong"
+            app:boxBackgroundColor="@color/white"
             app:boxBackgroundMode="outline"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#1394DA"
+            app:boxStrokeColor="#0D5EE4"
             app:boxStrokeErrorColor="#E40808"
-            android:layout_marginTop="10dp"
             app:errorTextColor="#ED0A0A">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="20dp"
                 android:inputType="textEmailAddress"
-                android:textColorLink="#FFA000"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black" />
+                android:textColorHint="@color/black"
+                android:textColorLink="#FFA000" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -137,51 +144,58 @@
             android:layout_marginTop="10dp"
             android:hint="Password"
             android:textColorHint="@color/black"
-            app:boxBackgroundColor="#E8ECF4"
+            app:boxBackgroundColor="@color/white"
             app:boxBackgroundMode="outline"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#1394DA"
+            app:boxStrokeColor="#0D5EE4"
+
             app:boxStrokeErrorColor="#E40808"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_password_24"
+                android:drawablePadding="20dp"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-
                 android:textColorHint="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edt_phone"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone number"
+            android:layout_marginTop="10dp"
 
-            android:textDirection="firstStrong"
+            android:hint="Phone number"
             android:textColorHint="@color/black"
-            app:boxBackgroundColor="#E8ECF4"
+            android:textDirection="firstStrong"
+            app:boxBackgroundColor="@color/white"
             app:boxBackgroundMode="outline"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#1394DA"
+
+            app:boxStrokeColor="#0D5EE4"
             app:boxStrokeErrorColor="#E40808"
-            android:layout_marginTop="10dp"
             app:errorTextColor="#ED0A0A">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="20dp"
                 android:inputType="number"
-                android:textColorLink="#FFA000"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black" />
+                android:textColorHint="@color/black"
+                android:textColorLink="#FFA000" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -195,11 +209,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="20dp"
+        android:drawableRight="@drawable/ic_baseline_login_24"
         android:text="Register"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp"
-        app:backgroundTint="#1976D2"
+        app:backgroundTint="#0D5EE4"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -210,21 +225,12 @@
         app:strokeColor="#1976D2"
         app:strokeWidth="2dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="69dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_eiu" />
-
     <TextView
-    android:gravity="center"
         android:id="@+id/tv_already_have_acc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="Already have an account!"
         android:textColor="#1976D2"
         android:textSize="20dp"
@@ -232,6 +238,33 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reg" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_baseline_navigate_before_24"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

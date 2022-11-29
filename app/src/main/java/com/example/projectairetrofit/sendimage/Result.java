@@ -1,4 +1,4 @@
-package com.example.projectairetrofit;
+package com.example.projectairetrofit.sendimage;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

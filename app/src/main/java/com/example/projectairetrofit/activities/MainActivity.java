@@ -1,4 +1,4 @@
-package com.example.projectairetrofit;
+package com.example.projectairetrofit.activities;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -12,25 +12,16 @@ import androidx.core.content.FileProvider;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Base64;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -39,28 +30,30 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.tensorflow.lite.support.image.TensorImage;
-import org.tensorflow.lite.support.label.Category;
-import org.tensorflow.lite.task.vision.detector.Detection;
-import org.tensorflow.lite.task.vision.detector.ObjectDetector;
+import com.example.projectairetrofit.adapter.CustomAdapter;
+import com.example.projectairetrofit.DemoRetrofit;
+import com.example.projectairetrofit.R;
+import com.example.projectairetrofit.sendimage.CustomCallback;
+import com.example.projectairetrofit.sendimage.DemoService;
+import com.example.projectairetrofit.sendimage.Result;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edt_url;
-    ImageView screeview;
-    ImageButton btn_takePhoto;
-    Spinner spinner;
-    TextView tv_cancerName, tv_Pro;
-    ProgressBar pbLoad;
-    ImageButton btn_home, btn_profile;
+    public EditText edt_url;
+    private ImageView screeview;
+    private ImageButton btn_takePhoto;
+    private Spinner spinner;
+    private TextView tv_cancerName, tv_Pro,tv_back;
+    private ProgressBar pbLoad;
+    private ImageButton btn_home, btn_profile;
+
 
     int image_test[] = {R.drawable.img19, R.drawable.img17, R.drawable.img18,
             R.drawable.img22, R.drawable.img23, R.drawable.img25, R.drawable.img26,
@@ -207,23 +200,21 @@ public class MainActivity extends AppCompatActivity {
         edt_url = findViewById(R.id.edt_url);
         screeview.setImageBitmap(getSampleImage(R.drawable.white));
 //        pbLoad= findViewById(R.id.pb_load_main);
-        btn_home= findViewById(R.id.btn_home);
-        btn_profile= findViewById(R.id.btn_profile);
+        btn_home = findViewById(R.id.btn_home);
+        btn_profile = findViewById(R.id.btn_profile);
+        tv_back=findViewById(R.id.tv_back);
         btn_takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                dispatchTakePictureIntent();
                 String fileName = "photo";
                 File storageDirectory = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-
-
                 try {
                     File imageFile = File.createTempFile(fileName, ".jpg", storageDirectory);
                     currentPhotoPath = imageFile.getAbsolutePath();
                     Uri imageUri = FileProvider.getUriForFile(MainActivity.this, "com.example.projectairetrofit.fileprovider", imageFile);
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-
                     startForResult.launch(intent);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -233,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
@@ -242,12 +233,22 @@ public class MainActivity extends AppCompatActivity {
         btn_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
                 finish();
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
+        tv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            }
+        });
+
         //get the spinner from the xml.
         spinner = findViewById(R.id.spinner1);
 //create a list of items for the spinner.

@@ -12,6 +12,8 @@ import androidx.core.content.FileProvider;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.graphics.Matrix.ScaleToFit;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,6 +38,7 @@ import com.example.projectairetrofit.R;
 import com.example.projectairetrofit.sendimage.CustomCallback;
 import com.example.projectairetrofit.sendimage.DemoService;
 import com.example.projectairetrofit.sendimage.Result;
+import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -51,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn_takePhoto;
     private Spinner spinner;
     private TextView tv_cancerName, tv_Pro,tv_back;
-    private ProgressBar pbLoad;
+    private ProgressBar loadingPB;
     private ImageButton btn_home, btn_profile;
+    private int desWith= 12000;
+    private int desHeight= 900;
 
 
     int image_test[] = {R.drawable.img19, R.drawable.img17, R.drawable.img18,
@@ -61,13 +66,14 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.img33, R.drawable.img40, R.drawable.img41, R.drawable.img42,
             R.drawable.img43, R.drawable.img44, R.drawable.img45, R.drawable.img46,
             R.drawable.img47, R.drawable.img48, R.drawable.img49, R.drawable.img50};
+    // send the image from mobile side to server side when click OK
     ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
         @Override
         public void onActivityResult(ActivityResult result) {
             if (result.getResultCode() == RESULT_OK && result != null) {
 //                Bundle extras = result.getData().getExtras();
 //                Bitmap imageBitmap = (Bitmap) extras.get("data");
-
+                loadingPB.setVisibility(View.VISIBLE);
                 Bitmap imageBitmap = BitmapFactory.decodeFile(currentPhotoPath);
                 imageBitmap = Bitmap.createScaledBitmap(imageBitmap, imageBitmap.getWidth() / 3, imageBitmap.getHeight() / 3, true);
 
@@ -80,7 +86,13 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("Withoutputbitmap: " + outputbitmap.getWidth() + " " + "heightoutputbitmap " + outputbitmap.getHeight());
 
 //                Bitmap resized_outputbitmap = Bitmap.createScaledBitmap(outputbitmap, 1872 / 3, 4160 / 3, true);
-                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap, (int) (1872 / 2.6), (int) (4160 / 2.67), true);
+//                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap, (int) (1872 / 2.6), (int) (4160 / 2.67), true);
+
+                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap,outputbitmap.getWidth(),outputbitmap.getHeight(),true);
+//                Picasso.with(MainActivity.this).load(String.valueOf(resize))
+//                        .resize(1200,900)
+//                        .into(screeview);
+
 
                 byte[] bytes = bitmapToBytes(imageBitmap);
                 String base64 = bytesToBase64(bytes);
@@ -93,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
                             System.out.print("---------------If-----------");
 //                            screeview.setImageBitmap(outputbitmap);
                             screeview.setImageBitmap(resize);
+                            screeview.setVisibility(View.VISIBLE);
+                            loadingPB.setVisibility(View.GONE);
 
 
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
@@ -103,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                             float score = Float.parseFloat(value.getScore());
                             tv_Pro.setText(Math.round(score * 100) + "%");
 
-                        } else {
+                        } else  {
                             System.out.print("---------------else-----------");
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
                             String name = "Unknown Cancer";
@@ -112,6 +126,8 @@ public class MainActivity extends AppCompatActivity {
 
 //                            screeview.setImageBitmap(outputbitmap);
                             screeview.setImageBitmap(resize);
+                            screeview.setVisibility(View.VISIBLE);
+                            loadingPB.setVisibility(View.GONE);
 
                         }
                     }
@@ -128,10 +144,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void detect(String base64, CustomCallback customCallback) {
         if (edt_url.getText().toString().equals("")) {
-            edt_url.setText("");
-            Toast.makeText(MainActivity.this, "Please Enter the URL!", Toast.LENGTH_LONG).show();
+            edt_url.setText("https://535d-180-148-6-78.ap.ngrok.io");
+//            Toast.makeText(MainActivity.this, "Please Enter the URL!", Toast.LENGTH_LONG).show();
         } else {
             DemoService demoService = DemoRetrofit.getInstance(edt_url.getText().toString()).create(DemoService.class);
+            edt_url.setBackground(null);
+            edt_url.setVisibility(View.GONE);
             demoService.getimage(base64, spinner.getSelectedItem().toString()).enqueue(new Callback<Result>() {
                 @Override
                 public void onResponse(Call<Result> call, Response<Result> response) {
@@ -199,14 +217,14 @@ public class MainActivity extends AppCompatActivity {
         tv_Pro = findViewById(R.id.tv_pro);
         edt_url = findViewById(R.id.edt_url);
         screeview.setImageBitmap(getSampleImage(R.drawable.white));
-//        pbLoad= findViewById(R.id.pb_load_main);
         btn_home = findViewById(R.id.btn_home);
         btn_profile = findViewById(R.id.btn_profile);
         tv_back=findViewById(R.id.tv_back);
+        loadingPB=findViewById(R.id.progressBar_main);
         btn_takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                dispatchTakePictureIntent();
+                loadingPB.setVisibility(View.VISIBLE);
                 String fileName = "photo";
                 File storageDirectory = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
                 try {
@@ -216,6 +234,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                     startForResult.launch(intent);
+                    loadingPB.setVisibility(View.GONE);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -266,7 +285,9 @@ public class MainActivity extends AppCompatActivity {
         spin_image.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                loadingPB.setVisibility(View.VISIBLE);
                 screeview.setImageBitmap(getSampleImage(image_test[position]));
+
 //                Bitmap imageBitmap = getSampleImage(image_test[position]);
 //                imageBitmap = Bitmap.createScaledBitmap(imageBitmap, imageBitmap.getWidth() / 3, imageBitmap.getHeight() / 3, true);
 
@@ -291,6 +312,8 @@ public class MainActivity extends AppCompatActivity {
                         if (value != null) {
                             System.out.print("---------------If-----------");
                             screeview.setImageBitmap(outputbitmap);
+                            screeview.setVisibility(View.VISIBLE);
+                            loadingPB.setVisibility(View.GONE);
 //                            screeview.setImageBitmap(resize);
 
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
@@ -312,6 +335,8 @@ public class MainActivity extends AppCompatActivity {
                             tv_Pro.setText("0%");
 
                             screeview.setImageBitmap(outputbitmap);
+                            screeview.setVisibility(View.VISIBLE);
+                            loadingPB.setVisibility(View.GONE);
 //                            screeview.setImageBitmap(resize);
                         }
                     }
@@ -336,8 +361,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == RESULT_OK) {
+            loadingPB.setVisibility(View.VISIBLE);
             Bitmap bitmap = BitmapFactory.decodeFile(currentPhotoPath);
             screeview.setImageBitmap(bitmap);
+            loadingPB.setVisibility(View.GONE);
         } else {
             System.out.println(requestCode + "REquescode------");
         }

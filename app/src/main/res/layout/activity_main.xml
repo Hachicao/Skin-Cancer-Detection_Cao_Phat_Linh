@@ -65,24 +65,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/circle" />
 
+
     <ImageView
         android:id="@+id/screeView"
-        android:layout_width="295dp"
-        android:layout_height="214dp"
+        android:layout_width="286dp"
+        android:layout_height="184dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
+        android:visibility="invisible"
         android:scaleType="fitXY"
         android:src="@drawable/doctor_img_women"
         app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageButton
         android:id="@+id/btn_takePic"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -235,6 +237,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:ems="10"
+
             android:hint="Enter url here!"
             android:inputType="textPersonName"
             android:textColor="#040404"
@@ -259,7 +262,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="0"
-            android:text="Range Accuracy:"
+            android:text="Confidence Score:"
             android:textColor="#1976D2"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -289,7 +292,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="0"
-            android:text="Example Image:"
+            android:text="Sample Image:"
             android:textColor="#1976D2"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -299,21 +302,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginRight="20dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView11"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:gravity="center"-->
-<!--        android:text="SkinDetec.AI"-->
-<!--        android:textColor="#1461E5"-->
-<!--        android:textSize="20sp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/tv_back"
@@ -325,5 +317,19 @@
         android:drawablePadding="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_back"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

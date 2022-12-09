@@ -3,6 +3,7 @@ package com.example.projectairetrofit.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -49,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         mapping();
 
-
+        // register
         btn_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,18 +58,16 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = edt_email.getEditText().getText().toString().trim();
                 String pass = edt_pass.getEditText().getText().toString().trim();
                 String phone = edt_phone.getEditText().getText().toString().trim();
-                System.out.println(name + "_---------------------");
-                if (name.isEmpty() && email.isEmpty() && pass.isEmpty() && phone.isEmpty()) {
+                //validate the data
+                if (!doValidate()) {
                     Toast.makeText(RegisterActivity.this, "Please enter the values", Toast.LENGTH_SHORT).show();
-//                    Snackbar.make(ctReg, "Please enter your fields...", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
+                // post data to server
                 postDataUsingVolley(name, email, pass, phone);
-                moveIntent();
-
             }
         });
-
+        // already have an account
         tv_alredy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
+        // go back
         tv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,16 +88,51 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+    // do validate tha data
+    public boolean doValidate() {
+        boolean isValid = true;
+        if (this.edt_userReg.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_userReg.setError("Enter Username");
 
-
+        } else {
+            edt_userReg.setEnabled(false);
+            edt_userReg.setError(null);
+        }
+        if (this.edt_email.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_email.setError("Enter Email");
+        } else {
+            edt_email.setEnabled(false);
+            edt_email.setError(null);
+        }
+        if (this.edt_pass.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_pass.setError("Enter password");
+        } else {
+            edt_pass.setEnabled(false);
+            edt_pass.setError(null);
+        }
+        if (this.edt_phone.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_phone.setError("Enter phone");
+        } else {
+            edt_phone.setEnabled(false);
+            edt_phone.setError(null);
+        }
+        return isValid;
+    }
+    // post data to server
     public void postDataUsingVolley(String name, String email, String pass, String phone) {
-        String url = " https://4b32-180-148-6-78.ap.ngrok.io/register";
+        String url = "https://535d-180-148-6-78.ap.ngrok.io/registerMoblie";
         loadingPB.setVisibility(View.VISIBLE);
+        btn_reg.setVisibility(View.GONE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         loadingPB.setVisibility(View.GONE);
+                        btn_reg.setVisibility(View.VISIBLE);
                         edt_userReg.getEditText().setText("");
                         edt_email.getEditText().setText("");
                         edt_pass.getEditText().setText("");
@@ -108,13 +143,14 @@ public class RegisterActivity extends AppCompatActivity {
                             String data = jsonObject.getString("placement");
                             if (data.equals("1")) {
                                 Toast.makeText(getApplicationContext(), "successful", Toast.LENGTH_LONG).show();
+                                moveIntent();
                             } else {
-                                Toast.makeText(getApplicationContext(), "Unsuccessful", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "Unsuccessful! The user have existed", Toast.LENGTH_LONG).show();
 
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            System.out.println(e + " -------------------");
+
                         }
                     }
                 },
@@ -122,7 +158,6 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(RegisterActivity.this, "Fail to get respone = " + error.getMessage(), Toast.LENGTH_LONG).show();
-                        System.out.println("-----------ERROR----------" + error.getMessage());
                     }
                 }) {
 
@@ -140,7 +175,7 @@ public class RegisterActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
         queue.add(stringRequest);
     }
-
+    // move to main activity
     public void moveIntent() {
         Intent myintent = new Intent(RegisterActivity.this, MainActivity.class);
         startActivity(myintent);
@@ -156,7 +191,6 @@ public class RegisterActivity extends AppCompatActivity {
         btn_reg = findViewById(R.id.btn_reg);
         tv_alredy = findViewById(R.id.tv_already_have_acc);
         tv_back = findViewById(R.id.tv_back);
-//        tv_mess = findViewById(R.id.tv_mess);
         ctReg = findViewById(R.id.ct_reg);
         edt_url = findViewById(R.id.edt_url);
         loadingPB = findViewById(R.id.progress_circular);

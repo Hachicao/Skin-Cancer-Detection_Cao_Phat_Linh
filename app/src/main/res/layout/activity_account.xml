@@ -54,7 +54,6 @@
         android:id="@+id/card_patient"
         android:layout_width="329dp"
         android:layout_height="129dp"
-        android:layout_marginTop="44dp"
         android:padding="20dp"
         app:cardBackgroundColor="#fff"
         app:cardCornerRadius="20dp"
@@ -101,10 +100,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_patient" />
 
             <ImageView
-                android:background="#fFFFFF"
                 android:id="@+id/img_patient"
                 android:layout_width="121dp"
                 android:layout_height="113dp"
+                android:background="#fFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.94"

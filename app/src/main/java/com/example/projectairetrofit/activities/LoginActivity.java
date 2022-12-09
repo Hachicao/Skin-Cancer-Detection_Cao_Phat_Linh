@@ -7,14 +7,30 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.projectairetrofit.R;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
     private TextInputLayout edt_uname, edt_pwd;
@@ -22,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView tv_reg;
     private ImageView img_back;
     private ConstraintLayout ctHome;
+    private ProgressBar loadingPB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.login);
         mapping();
 
-
+        // move to register side
         tv_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,25 +57,30 @@ public class LoginActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
-
+        // login
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String name= edt_uname.getEditText().getText().toString();
-                String pass= edt_pwd.getEditText().getText().toString();
-                if(TextUtils.isEmpty(name) && TextUtils.isEmpty(pass)){
-//                    Toast.makeText(LoginActivity.this,"Please enter your email and password...",Toast.LENGTH_LONG).show();
-                    Snackbar.make(ctHome, "Please enter your email and password...", Snackbar.LENGTH_SHORT).show();
+                loadingPB.setVisibility(View.VISIBLE);
+                btn_login.setVisibility(View.GONE);
+                String name = edt_uname.getEditText().getText().toString();
+                String pass = edt_pwd.getEditText().getText().toString();
+                if (!doValidate()) {
+                    Toast.makeText(LoginActivity.this, "Please enter your email and password...", Toast.LENGTH_LONG).show();
+//                    Snackbar.make(ctHome, "Please enter your email and password...", Snackbar.LENGTH_SHORT).show();
+                    loadingPB.setVisibility(View.GONE);
+                    btn_login.setVisibility(View.VISIBLE);
                     return;
                 }
-
+                postDataUsingVolley(name, pass);
                 Intent myintent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(myintent);
                 finish();
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
+
+        // back to previous side
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +91,75 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    // post data to server
+    public void postDataUsingVolley(String name, String pass) {
+        String url = "https://535d-180-148-6-78.ap.ngrok.io/registerMoblie";
+        loadingPB.setVisibility(View.VISIBLE);
+        btn_login.setVisibility(View.GONE);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        loadingPB.setVisibility(View.GONE);
+                        btn_login.setVisibility(View.VISIBLE);
+                        edt_uname.getEditText().setText("");
+                        edt_pwd.getEditText().setText("");
 
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            String data = jsonObject.getString("placement");
+                            if (data.equals("1")) {
+                                Toast.makeText(getApplicationContext(), "successful", Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Unsuccessful", Toast.LENGTH_LONG).show();
+
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(LoginActivity.this, "Fail to get respone = " + error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("name", edt_uname.getEditText().getText().toString().trim());
+                params.put("email", edt_pwd.getEditText().getText().toString().trim());
+                return params;
+            }
+        };
+        RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
+        queue.add(stringRequest);
+    }
+
+    // do Validate the information
+    public boolean doValidate() {
+        boolean isValid = true;
+        if (this.edt_uname.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_uname.setError("Enter Username");
+
+        } else {
+            edt_uname.setEnabled(false);
+            edt_uname.setError(null);
+        }
+        if (this.edt_pwd.getEditText().getText().length() == 0) {
+            isValid = false;
+            edt_pwd.setError("Enter Email");
+        } else {
+            edt_pwd.setEnabled(false);
+            edt_pwd.setError(null);
+        }
+        return isValid;
+    }
 
     private void mapping() {
         edt_uname = findViewById(R.id.edt_uname);
@@ -77,7 +167,8 @@ public class LoginActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_reg);
         tv_reg = findViewById(R.id.tv_register);
         img_back = findViewById(R.id.img_back);
-        ctHome= findViewById(R.id.ct_home);
+        ctHome = findViewById(R.id.ct_home);
+        loadingPB = findViewById(R.id.progressBar);
     }
 
 }

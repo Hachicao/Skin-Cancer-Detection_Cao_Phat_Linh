@@ -137,14 +137,14 @@
     </LinearLayout>
 
     <Button
-        android:gravity="right"
         android:id="@+id/btn_forgotpass"
         android:layout_width="224dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="#00000000"
         android:backgroundTint="#FFFFFF"
         android:elevation="0dp"
+        android:gravity="right"
         android:text="Forgot Password"
 
         android:textAllCaps="false"
@@ -236,10 +236,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:gravity="center"
+        android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -247,19 +248,20 @@
 
         <TextView
             android:id="@+id/TextView"
-            android:textColor="@color/black"
-            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Don't have an account?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
         <TextView
-            android:layout_marginLeft="5dp"
             android:id="@+id/tv_register"
-            android:textColor="#0659AC"
-            android:textSize="15sp"
-            android:text="Register Now"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Register Now"
+            android:textColor="#0659AC"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <ImageView
@@ -271,6 +273,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_navigate_before_24" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

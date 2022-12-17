@@ -88,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
     // do validate tha data
     public boolean doValidate() {
         boolean isValid = true;
@@ -122,6 +123,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         return isValid;
     }
+
     // post data to server
     public void postDataUsingVolley(String name, String email, String pass, String phone) {
         String url = "https://535d-180-148-6-78.ap.ngrok.io/registerMoblie";
@@ -145,8 +147,8 @@ public class RegisterActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "successful", Toast.LENGTH_LONG).show();
                                 moveIntent();
                             } else {
-                                Toast.makeText(getApplicationContext(), "Unsuccessful! The user have existed", Toast.LENGTH_LONG).show();
-
+                                Toast.makeText(getApplicationContext(), "Unsuccessful! The user already exists", Toast.LENGTH_LONG).show();
+                                edit();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -157,7 +159,7 @@ public class RegisterActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(RegisterActivity.this, "Fail to get respone = " + error.getMessage(), Toast.LENGTH_LONG).show();
+//                        Toast.makeText(RegisterActivity.this, "Fail to get response = " + error.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }) {
 
@@ -175,6 +177,7 @@ public class RegisterActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
         queue.add(stringRequest);
     }
+
     // move to main activity
     public void moveIntent() {
         Intent myintent = new Intent(RegisterActivity.this, MainActivity.class);
@@ -182,7 +185,13 @@ public class RegisterActivity extends AppCompatActivity {
         finish();
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
+    public void edit(){
+        Intent myintent = new Intent(RegisterActivity.this, RegisterActivity.class);
+        startActivity(myintent);
+        finish();
 
+
+    }
     public void mapping() {
         edt_userReg = findViewById(R.id.edt_uname);
         edt_email = findViewById(R.id.edt_email);

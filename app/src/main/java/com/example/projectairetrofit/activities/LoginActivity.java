@@ -61,22 +61,13 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingPB.setVisibility(View.VISIBLE);
-                btn_login.setVisibility(View.GONE);
                 String name = edt_uname.getEditText().getText().toString();
                 String pass = edt_pwd.getEditText().getText().toString();
                 if (!doValidate()) {
                     Toast.makeText(LoginActivity.this, "Please enter your email and password...", Toast.LENGTH_LONG).show();
-//                    Snackbar.make(ctHome, "Please enter your email and password...", Snackbar.LENGTH_SHORT).show();
-                    loadingPB.setVisibility(View.GONE);
-                    btn_login.setVisibility(View.VISIBLE);
                     return;
                 }
                 postDataUsingVolley(name, pass);
-                Intent myintent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(myintent);
-                finish();
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
 
@@ -91,9 +82,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
     // post data to server
     public void postDataUsingVolley(String name, String pass) {
-        String url = "https://535d-180-148-6-78.ap.ngrok.io/registerMoblie";
+        String url = "https://535d-180-148-6-78.ap.ngrok.io/loginMobile";
         loadingPB.setVisibility(View.VISIBLE);
         btn_login.setVisibility(View.GONE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
@@ -109,10 +101,11 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             String data = jsonObject.getString("placement");
                             if (data.equals("1")) {
-                                Toast.makeText(getApplicationContext(), "successful", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), " Logged in successfully", Toast.LENGTH_LONG).show();
+                                moveIntent();
                             } else {
-                                Toast.makeText(getApplicationContext(), "Unsuccessful", Toast.LENGTH_LONG).show();
-
+                                Toast.makeText(getApplicationContext(), "Unsuccessful! Wrong Username or Password", Toast.LENGTH_LONG).show();
+                                edit();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -123,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(LoginActivity.this, "Fail to get respone = " + error.getMessage(), Toast.LENGTH_LONG).show();
+//                        Toast.makeText(LoginActivity.this, "Fail to get respone = " + error.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }) {
 
@@ -132,12 +125,25 @@ public class LoginActivity extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
                 params.put("name", edt_uname.getEditText().getText().toString().trim());
-                params.put("email", edt_pwd.getEditText().getText().toString().trim());
+                params.put("pass", edt_pwd.getEditText().getText().toString().trim());
                 return params;
             }
         };
         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
         queue.add(stringRequest);
+    }
+
+    public void moveIntent() {
+        Intent myintent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(myintent);
+        finish();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+
+    public void edit() {
+        Intent myintent = new Intent(LoginActivity.this, LoginActivity.class);
+        startActivity(myintent);
+        finish();
     }
 
     // do Validate the information
@@ -153,7 +159,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         if (this.edt_pwd.getEditText().getText().length() == 0) {
             isValid = false;
-            edt_pwd.setError("Enter Email");
+            edt_pwd.setError("Enter Password!");
         } else {
             edt_pwd.setEnabled(false);
             edt_pwd.setError(null);

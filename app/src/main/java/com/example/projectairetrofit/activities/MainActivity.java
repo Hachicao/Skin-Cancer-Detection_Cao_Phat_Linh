@@ -53,19 +53,19 @@ public class MainActivity extends AppCompatActivity {
     private ImageView screeview;
     private ImageButton btn_takePhoto;
     private Spinner spinner;
-    private TextView tv_cancerName, tv_Pro,tv_back;
+    private TextView tv_cancerName, tv_Pro, tv_back;
     private ProgressBar loadingPB;
     private ImageButton btn_home, btn_profile;
-    private int desWith= 12000;
-    private int desHeight= 900;
+    private int desWith = 12000;
+    private int desHeight = 900;
 
 
-    int image_test[] = {R.drawable.img19, R.drawable.img17, R.drawable.img18,
-            R.drawable.img22, R.drawable.img23, R.drawable.img25, R.drawable.img26,
+    int image_test[] = {R.drawable.img19, R.drawable.img18,
+            R.drawable.img22, R.drawable.img25, R.drawable.img26,
             R.drawable.img27, R.drawable.img29, R.drawable.img30, R.drawable.img32,
             R.drawable.img33, R.drawable.img40, R.drawable.img41, R.drawable.img42,
             R.drawable.img43, R.drawable.img44, R.drawable.img45, R.drawable.img46,
-            R.drawable.img47, R.drawable.img48, R.drawable.img49, R.drawable.img50};
+    };
     // send the image from mobile side to server side when click OK
     ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
         @Override
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 //                Bitmap resized_outputbitmap = Bitmap.createScaledBitmap(outputbitmap, 1872 / 3, 4160 / 3, true);
 //                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap, (int) (1872 / 2.6), (int) (4160 / 2.67), true);
 
-                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap,outputbitmap.getWidth(),outputbitmap.getHeight(),true);
+                Bitmap resize = Bitmap.createScaledBitmap(outputbitmap, outputbitmap.getWidth(), outputbitmap.getHeight(), true);
 //                Picasso.with(MainActivity.this).load(String.valueOf(resize))
 //                        .resize(1200,900)
 //                        .into(screeview);
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                             float score = Float.parseFloat(value.getScore());
                             tv_Pro.setText(Math.round(score * 100) + "%");
 
-                        } else  {
+                        } else {
                             System.out.print("---------------else-----------");
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
                             String name = "Unknown Cancer";
@@ -219,8 +219,8 @@ public class MainActivity extends AppCompatActivity {
         screeview.setImageBitmap(getSampleImage(R.drawable.white));
         btn_home = findViewById(R.id.btn_home);
         btn_profile = findViewById(R.id.btn_profile);
-        tv_back=findViewById(R.id.tv_back);
-        loadingPB=findViewById(R.id.progressBar_main);
+        tv_back = findViewById(R.id.tv_back);
+        loadingPB = findViewById(R.id.progressBar_main);
         btn_takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

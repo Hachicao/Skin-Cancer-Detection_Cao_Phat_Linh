@@ -126,7 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     // post data to server
     public void postDataUsingVolley(String name, String email, String pass, String phone) {
-        String url = "https://535d-180-148-6-78.ap.ngrok.io/registerMoblie";
+        String url = "https://4274-180-148-6-78.ap.ngrok.io/registerMoblie";
         loadingPB.setVisibility(View.VISIBLE);
         btn_reg.setVisibility(View.GONE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,

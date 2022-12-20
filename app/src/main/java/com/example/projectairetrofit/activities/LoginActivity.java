@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // post data to server
     public void postDataUsingVolley(String name, String pass) {
-        String url = "https://535d-180-148-6-78.ap.ngrok.io/loginMobile";
+        String url = "https://4274-180-148-6-78.ap.ngrok.io/loginMobile";
         loadingPB.setVisibility(View.VISIBLE);
         btn_login.setVisibility(View.GONE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,

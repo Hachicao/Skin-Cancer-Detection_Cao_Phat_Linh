@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv_cancerName, tv_Pro, tv_back;
     private ProgressBar loadingPB;
     private ImageButton btn_home, btn_profile;
-    private int desWith = 12000;
-    private int desHeight = 900;
+
 
 
     int image_test[] = {R.drawable.img19, R.drawable.img18,
@@ -144,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void detect(String base64, CustomCallback customCallback) {
         if (edt_url.getText().toString().equals("")) {
-            edt_url.setText("https://535d-180-148-6-78.ap.ngrok.io");
+            edt_url.setText("");
 //            Toast.makeText(MainActivity.this, "Please Enter the URL!", Toast.LENGTH_LONG).show();
         } else {
             DemoService demoService = DemoRetrofit.getInstance(edt_url.getText().toString()).create(DemoService.class);

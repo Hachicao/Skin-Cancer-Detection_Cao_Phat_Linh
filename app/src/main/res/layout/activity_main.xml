@@ -97,7 +97,7 @@
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
@@ -107,24 +107,25 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/screeView">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            android:text="Type:"
-            android:textColor="#1976D2"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView9"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0"-->
+<!--            android:text="Type: "-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:textColor="#1976D2"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
 
         <TextView
+            android:gravity="center_vertical"
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.9"
-
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:textColor="#E30D0D"
-            android:textSize="17sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -140,25 +141,25 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/linear1">
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            android:text="Probability:"
-            android:textColor="#1976D2"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/textViewPro"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.1"-->
+<!--            android:text="Probability:"-->
+<!--            android:textColor="#1976D2"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
 
-        <TextView
-            android:id="@+id/tv_pro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.9"
+<!--        <TextView-->
+<!--            android:id="@+id/tv_pro"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.9"-->
 
-            android:textColor="#E30D0D"
-            android:textSize="17sp"
-            android:textStyle="bold" />
+<!--            android:textColor="#E30D0D"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textStyle="bold" />-->
     </LinearLayout>
 
     <TextView
@@ -256,16 +257,16 @@
         app:layout_constraintStart_toStartOf="@+id/line"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0"
-            android:text="Confidence Score:"
-            android:textColor="#1976D2"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/textViewConf"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_weight="0"-->
+<!--            android:text="Confidence Score:"-->
+<!--            android:textColor="#1976D2"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
 
         <Spinner
             android:id="@+id/spinner1"

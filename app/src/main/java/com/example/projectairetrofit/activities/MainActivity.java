@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView screeview;
     private ImageButton btn_takePhoto;
     private Spinner spinner;
-    private TextView tv_cancerName, tv_Pro, tv_back;
+    private TextView tv_cancerName, tv_Pro, tv_back ,tv_namepro, tv_nameconf;
     private ProgressBar loadingPB;
     private ImageButton btn_home, btn_profile;
 
@@ -114,14 +114,18 @@ public class MainActivity extends AppCompatActivity {
 
 
                             float score = Float.parseFloat(value.getScore());
-                            tv_Pro.setText(Math.round(score * 100) + "%");
+//                            tv_Pro.setVisibility(View.GONE);
+
+//                            tv_Pro.setText(Math.round(score * 100) + "%");
 
                         } else {
                             System.out.print("---------------else-----------");
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
-                            String name = "Unknown Cancer";
+                            String name = "Congratulation! Your skin is good";
                             tv_cancerName.setText(name);
-                            tv_Pro.setText("0%");
+//                            tv_Pro.setVisibility(View.GONE);
+
+//                            tv_Pro.setText("0%");
 
 //                            screeview.setImageBitmap(outputbitmap);
                             screeview.setImageBitmap(resize);
@@ -213,13 +217,15 @@ public class MainActivity extends AppCompatActivity {
         screeview = findViewById(R.id.screeView);
         btn_takePhoto = findViewById(R.id.btn_takePic);
         tv_cancerName = findViewById(R.id.tv_name);
-        tv_Pro = findViewById(R.id.tv_pro);
+//        tv_Pro = findViewById(R.id.tv_pro);
         edt_url = findViewById(R.id.edt_url);
         screeview.setImageBitmap(getSampleImage(R.drawable.white));
         btn_home = findViewById(R.id.btn_home);
         btn_profile = findViewById(R.id.btn_profile);
         tv_back = findViewById(R.id.tv_back);
         loadingPB = findViewById(R.id.progressBar_main);
+//        tv_namepro= findViewById(R.id.textViewPro);
+//        tv_nameconf= findViewById(R.id.textViewConf);
         btn_takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -269,6 +275,7 @@ public class MainActivity extends AppCompatActivity {
 
         //get the spinner from the xml.
         spinner = findViewById(R.id.spinner1);
+        spinner.setVisibility(View.GONE);
 //create a list of items for the spinner.
         String[] items = new String[]{"0.9", "0.85", "0.8", "0.75", "0.7", "0.6", "0.5"};
 //create an adapter to describe how the items are displayed, adapters are used in several places in android.
@@ -324,14 +331,18 @@ public class MainActivity extends AppCompatActivity {
 //                            Typeface typeface = getResources().getFont(R.font.roboto_thin);
 //
                             float score = Float.parseFloat(value.getScore());
-                            tv_Pro.setText(Math.round(score * 100) + "%");
+//                            tv_Pro.setVisibility(View.GONE);
+
+//                            tv_Pro.setText(Math.round(score * 100) + "%");
 
                         } else {
                             System.out.print("---------------else-----------");
 //                            Rect tagSize = new Rect(0, 0, 0, 0);
-                            String name = "Unknown Cancer";
+                            String name = "Congratulation! Your skin is good";
                             tv_cancerName.setText(name);
-                            tv_Pro.setText("0%");
+//                            tv_Pro.setVisibility(View.GONE);
+
+//                            tv_Pro.setText("0%");
 
                             screeview.setImageBitmap(outputbitmap);
                             screeview.setVisibility(View.VISIBLE);
